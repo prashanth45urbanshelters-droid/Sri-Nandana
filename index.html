@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sri Nandana Infra — 220 premium residences in Ananth Nagar, Electronic City, Bangalore. Modern homes with 20+ lifestyle amenities starting at ₹7,000/sq.ft." />
+  <title>Sri Nandana Infra | Luxury Residences · Electronic City, Bangalore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════ HEADER (STATIC) -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a class="logo" href="#top" aria-label="Sri Nandana Infra home">
+        <img src="assets/sri nandana logo.png" alt="Sri Nandana Infra logo" class="logo-img" />
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#story"     class="nav-link">Story</a>
+        <a href="#location"  class="nav-link">Location</a>
+        <a href="#amenities" class="nav-link">Amenities</a>
+        <a href="#visit"     class="nav-link">Contact</a>
+      </nav>
+
+      <a href="tel:+919187455926" class="header-cta" id="headerCta">
+        <!-- Phone icon -->
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.7 2.8a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c1 .3 1.9.5 2.8.7A2 2 0 0 1 22 16.9z"/></svg>
+        Call Now
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav drawer -->
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <a href="#story"     class="mobile-nav-link">Story</a>
+    <a href="#location"  class="mobile-nav-link">Location</a>
+    <a href="#amenities" class="mobile-nav-link">Amenities</a>
+    <a href="#visit"     class="mobile-nav-link">Contact</a>
+    <a href="tel:+919187455926" class="mobile-nav-cta">Call +91 91874 55926</a>
+  </div>
+
+  <main id="top">
+
+    <!-- ═══════════════════════════════════════════ HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img src="assets/hero.jpg" alt="Sri Nandana luxury apartment complex exterior" class="hero-img" id="heroImg" />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content hero-grid">
+        <div class="hero-left">
+          <div class="hero-badge reveal-up" style="--delay:0s">
+            <!-- Map pin icon -->
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Ananth Nagar · Electronic City · Bangalore
+          </div>
+
+          <h1 class="hero-title reveal-up" style="--delay:.1s">
+            <em>Live</em> where<br/>
+            life flows<br/>
+            <em>effortlessly.</em>
+          </h1>
+
+          <p class="hero-sub reveal-up" style="--delay:.2s">
+            220 premium residences crafted for modern families and working professionals — with calm, connectivity, and character.
+          </p>
+
+          <div class="hero-actions reveal-up" style="--delay:.3s">
+            <a href="tel:+919187455926" class="btn btn-primary" id="heroCallBtn">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.7 2.8a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c1 .3 1.9.5 2.8.7A2 2 0 0 1 22 16.9z"/></svg>
+              Call +91 91874 55926
+            </a>
+            <a href="#visit" class="btn btn-ghost" id="heroVisitBtn">
+              Plan a site visit
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-right reveal-up" style="--delay:.25s">
+          <form class="hero-enquiry-card enquiry-form-submit" action="#" method="POST">
+            <input type="hidden" name="source" value="Hero Section Quick Enquiry" />
+            <h3>Quick Enquiry</h3>
+            <p>Get instant floor plans, pricing details, and exclusive booking offers.</p>
+            <div class="form-group">
+              <label for="heroName">Name</label>
+              <input type="text" id="heroName" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <label for="heroPhone">Phone Number</label>
+              <input type="tel" id="heroPhone" name="phone" placeholder="Enter Phone Number" required />
+            </div>
+            <button type="submit" class="btn btn-gold btn-submit-full">
+              Enquire Now
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Stats bar -->
+      <div class="hero-stats reveal-up" style="--delay:.4s">
+        <div class="stat-item">
+          <strong data-count="220">0</strong>
+          <span>Residences</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <strong>20+</strong>
+          <span>Amenities</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <strong>₹7K</strong>
+          <span>per sq.ft*</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <strong>G+S+B</strong>
+          <span>Floor Plans</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ STORY -->
+    <section class="story" id="story">
+      <div class="section-inner">
+
+        <div class="story-lead reveal-up">
+          <p class="overline">Project Story</p>
+          <h2 class="section-title">A home planned<br/><em>around your life.</em></h2>
+          <p class="section-body">
+            Sri Nandana is thoughtfully designed for modern families and working professionals who deserve better connectivity, daily convenience, and a residential environment that actually feels calm.
+          </p>
+        </div>
+
+        <div class="story-pillars">
+
+          <div class="pillar reveal-up" style="--delay:0s">
+            <div class="pillar-num">01</div>
+            <div class="pillar-icon" aria-hidden="true">
+              <!-- Modern architecture outline with filled window -->
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 21h18" />
+                <path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16" fill="currentColor" fill-opacity="0.1" />
+                <path d="M9 7h2v2H9z" fill="currentColor" />
+                <path d="M13 7h2v2h-2z" fill="currentColor" />
+                <path d="M9 11h2v2H9z" fill="currentColor" />
+                <path d="M13 11h2v2h-2z" fill="currentColor" />
+              </svg>
+            </div>
+            <h3>Practical Design</h3>
+            <p>Well-planned homes built for everyday comfort. Every square foot is purposeful.</p>
+          </div>
+
+          <div class="pillar reveal-up" style="--delay:.08s">
+            <div class="pillar-num">02</div>
+            <div class="pillar-icon" aria-hidden="true">
+              <!-- Users community with filled shapes -->
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" fill="currentColor" fill-opacity="0.1" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <h3>Community Living</h3>
+            <p>Shared spaces for wellness, recreation, and an easy neighbourhood rhythm.</p>
+          </div>
+
+          <div class="pillar reveal-up" style="--delay:.16s">
+            <div class="pillar-num">03</div>
+            <div class="pillar-icon" aria-hidden="true">
+              <!-- Compass / map pin details -->
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" fill="currentColor" fill-opacity="0.1" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                <path d="M2 12h20" />
+              </svg>
+            </div>
+            <h3>Prime Location</h3>
+            <p>Ananth Nagar keeps you minutes from Electronic City's tech parks and essentials.</p>
+          </div>
+
+          <div class="pillar reveal-up" style="--delay:.24s">
+            <div class="pillar-num">04</div>
+            <div class="pillar-icon" aria-hidden="true">
+              <!-- Growing trend bar chart with line -->
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 3v18h18" />
+                <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3" />
+                <path d="M15 8h4v4" />
+                <rect x="7" y="14" width="3" height="4" fill="currentColor" fill-opacity="0.1" />
+                <rect x="13" y="11" width="3" height="7" fill="currentColor" fill-opacity="0.1" />
+              </svg>
+            </div>
+            <h3>Future Value</h3>
+            <p>A fast-growing corridor with consistent appreciation and infrastructure growth.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ LOCATION -->
+    <section class="location" id="location">
+      <div class="section-inner location-inner">
+
+        <div class="location-copy reveal-up" style="--delay:0s">
+          <p class="overline">Location Advantage</p>
+          <h2 class="section-title">Connected to<br/><em>everything that matters.</em></h2>
+          <p class="section-body">
+            Convenient access to schools, colleges, healthcare, workplaces, shopping, and daily needs — a strong fit for families and professionals around Electronic City.
+          </p>
+
+          <div class="location-tags">
+
+            <div class="loc-tag reveal-up" style="--delay:.08s">
+              <div class="loc-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" fill="currentColor" fill-opacity="0.1" />
+                  <path d="M12 8v8M8 12h8" stroke-width="2.2" />
+                </svg>
+              </div>
+              <div>
+                <strong>Hospitals Nearby</strong>
+                <span>Sacred Oak · Neo True North</span>
+              </div>
+            </div>
+
+            <div class="loc-tag reveal-up" style="--delay:.14s">
+              <div class="loc-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z" fill="currentColor" fill-opacity="0.1" />
+                  <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                </svg>
+              </div>
+              <div>
+                <strong>Top Schools</strong>
+                <span>Multiple options within 5 km</span>
+              </div>
+            </div>
+
+            <div class="loc-tag reveal-up" style="--delay:.2s">
+              <div class="loc-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" fill="currentColor" fill-opacity="0.1" />
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                </svg>
+              </div>
+              <div>
+                <strong>Tech Workplaces</strong>
+                <span>Electronic City Phase I &amp; II</span>
+              </div>
+            </div>
+
+            <div class="loc-tag reveal-up" style="--delay:.26s">
+              <div class="loc-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" fill="currentColor" fill-opacity="0.1" />
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <path d="M16 10a4 4 0 0 1-8 0" />
+                </svg>
+              </div>
+              <div>
+                <strong>Shopping &amp; Daily Needs</strong>
+                <span>Malls, supermarkets &amp; markets nearby</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="location-visual reveal-up" style="--delay:.15s">
+          <a href="https://maps.app.goo.gl/vwdHqi7tMQbyh5Jc8" target="_blank" rel="noopener noreferrer" class="map-link-container" aria-label="Open Sri Nandana location on Google Maps">
+            <img src="assets/map.jpg" alt="Sri Nandana Infra location map" class="location-map-img" />
+            <div class="map-overlay-badge">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="pin-bounce"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              <span>Open Google Maps</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ AMENITIES -->
+    <section class="amenities" id="amenities">
+      <div class="section-inner">
+
+        <div class="amenities-header reveal-up">
+          <p class="overline">Lifestyle Amenities</p>
+          <h2 class="section-title">20+ ways to<br/><em>live better, every day.</em></h2>
+        </div>
+
+        <!-- Pool feature strip -->
+        <div class="pool-feature reveal-up" style="--delay:.1s">
+          <img src="assets/pool.jpg" alt="Luxury swimming pool and landscaped gardens at Sri Nandana" class="pool-img" />
+          <div class="pool-overlay">
+            <div class="pool-card">
+              <p class="overline" style="color:rgba(255,255,255,.65)">Featured Amenity</p>
+              <h3>Resort-style<br/>living, every day.</h3>
+              <p>Landscaped gardens, clubhouse, and wellness facilities — all within your community.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Amenity grid -->
+        <div class="amenity-grid">
+
+          <div class="amenity-card ac-navy reveal-up" style="--delay:0s">
+            <div class="ac-icon-wrap" aria-hidden="true">
+              <!-- Winding running path / route -->
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="6" cy="19" r="3" fill="currentColor" fill-opacity="0.15" />
+                <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-5a3.5 3.5 0 0 1 0-7H15" />
+                <circle cx="18" cy="5" r="3" fill="currentColor" fill-opacity="0.15" />
+              </svg>
+            </div>
+            <span class="ac-label">Active</span>
+            <h3>Jogging Track</h3>
+            <p>Start your morning with a dedicated running path through manicured greenery.</p>
+          </div>
+
+          <div class="amenity-card ac-orange reveal-up" style="--delay:.06s">
+            <div class="ac-icon-wrap" aria-hidden="true">
+              <!-- Clubhouse / building icon -->
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 21h18" />
+                <path d="M5 21V8l7-4 7 4v13" fill="currentColor" fill-opacity="0.15" />
+                <path d="M9 21v-6a3 3 0 0 1 6 0v6" />
+                <circle cx="12" cy="10" r="1.5" fill="currentColor" />
+              </svg>
+            </div>
+            <span class="ac-label">Social</span>
+            <h3>Clubhouse</h3>
+            <p>A premium space for community gatherings, celebrations, and casual evenings.</p>
+          </div>
+
+          <div class="amenity-card ac-navy reveal-up" style="--delay:.12s">
+            <div class="ac-icon-wrap" aria-hidden="true">
+              <!-- Dumbbell with translucent plates -->
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="6" width="3" height="12" rx="1.5" fill="currentColor" fill-opacity="0.2" />
+                <rect x="5" y="8" width="2" height="8" rx="1" fill="currentColor" fill-opacity="0.2" />
+                <line x1="7" y1="12" x2="17" y2="12" stroke-width="2.2" />
+                <rect x="17" y="8" width="2" height="8" rx="1" fill="currentColor" fill-opacity="0.2" />
+                <rect x="19" y="6" width="3" height="12" rx="1.5" fill="currentColor" fill-opacity="0.2" />
+              </svg>
+            </div>
+            <span class="ac-label">Wellness</span>
+            <h3>Gymnasium</h3>
+            <p>A fully-equipped fitness centre — no separate gym membership needed.</p>
+          </div>
+
+          <div class="amenity-card ac-light reveal-up" style="--delay:.18s">
+            <div class="ac-icon-wrap" aria-hidden="true">
+              <!-- Play Swing with translucent seat -->
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 21V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16" />
+                <path d="M8 3v12" />
+                <path d="M16 3v12" />
+                <rect x="6" y="15" width="12" height="2" rx="1" fill="currentColor" fill-opacity="0.2" />
+              </svg>
+            </div>
+            <span class="ac-label">Family</span>
+            <h3>Play Area</h3>
+            <p>Safe and vibrant children's play zone designed for every age group.</p>
+          </div>
+
+          <div class="amenity-card ac-light reveal-up" style="--delay:.06s">
+            <div class="ac-icon-wrap" aria-hidden="true">
+              <!-- Hall with a grand arch and chandelier -->
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 21V9a8 8 0 0 1 16 0v12" fill="currentColor" fill-opacity="0.1" />
+                <path d="M12 2v4M9 6h6M10 8h4" />
+                <path d="M3 21h18" />
+              </svg>
+            </div>
+            <span class="ac-label">Events</span>
+            <h3>Multipurpose Hall</h3>
+            <p>Host functions, workshops, or community events in a versatile space.</p>
+          </div>
+
+          <div class="amenity-card ac-orange reveal-up" style="--delay:.12s">
+            <div class="ac-icon-wrap" aria-hidden="true">
+              <!-- Detailed organic sprout / garden icon -->
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 10C12 10 9 6 12 2C15 6 12 10 12 10Z" fill="currentColor" fill-opacity="0.2" />
+                <path d="M12 10C12 10 15 11 17 8C15 5 12 10 12 10Z" fill="currentColor" fill-opacity="0.2" />
+                <path d="M12 10C12 10 9 11 7 8C9 5 12 10 12 10Z" fill="currentColor" fill-opacity="0.2" />
+                <path d="M12 10v12" />
+                <path d="M12 14a4 4 0 0 1 4-4" />
+                <path d="M12 17a4 4 0 0 0-4-4" />
+              </svg>
+            </div>
+            <span class="ac-label">Serenity</span>
+            <h3>Landscaped Gardens</h3>
+            <p>Pocket gardens and seating courts — nature within arm's reach.</p>
+          </div>
+
+          <div class="amenity-card ac-navy reveal-up" style="--delay:.18s">
+            <div class="ac-icon-wrap" aria-hidden="true">
+              <!-- Controller with translucent casing -->
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 12h4M8 10v4" />
+                <path d="M15 12h.01M18 10h.01M21 12h.01" stroke-width="2" />
+                <rect x="2" y="6" width="20" height="12" rx="6" fill="currentColor" fill-opacity="0.15" />
+              </svg>
+            </div>
+            <span class="ac-label">Leisure</span>
+            <h3>Indoor Games</h3>
+            <p>Table tennis, carrom, chess — the perfect wind-down after a long day.</p>
+          </div>
+
+          <div class="amenity-card ac-light reveal-up" style="--delay:.24s">
+            <div class="ac-icon-wrap" aria-hidden="true">
+              <!-- Shield with translucent fill and clean checkmark -->
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="currentColor" fill-opacity="0.15" />
+                <path d="M9 11l2 2 4-4" stroke-width="2.2" />
+              </svg>
+            </div>
+            <span class="ac-label">Safety</span>
+            <h3>24/7 Security</h3>
+            <p>CCTV surveillance and round-the-clock security for complete peace of mind.</p>
+          </div>
+
+        </div>
+
+        <p class="amenities-note reveal-up" style="--delay:.1s">
+          Plus power backup, uninterrupted water supply, designated parking, seating courts, and many more everyday conveniences.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ FLOOR PLANS -->
+    <section class="floorplan" id="floorplan">
+      <div class="section-inner">
+
+        <div class="fp-copy reveal-up">
+          <p class="overline">Floor Plan Overview</p>
+          <h2 class="section-title">Thoughtfully designed<br/><em>from the ground up.</em></h2>
+          <p class="section-body">
+            Sri Nandana features basement, ground, stilt, and typical floor plans — a practical planning story with well-designed driveways, a jogging track, and a generous residential footprint.
+          </p>
+          <div class="fp-legend">
+            <div class="fp-tag"><span class="fp-dot fp-b"></span>Basement</div>
+            <div class="fp-tag"><span class="fp-dot fp-g"></span>Ground Floor</div>
+            <div class="fp-tag"><span class="fp-dot fp-s"></span>Stilt</div>
+            <div class="fp-tag"><span class="fp-dot fp-t"></span>Typical Floor</div>
+          </div>
+        </div>
+
+        <div class="fp-visual reveal-up" style="--delay:.15s">
+          <div class="fp-card-list">
+            <a href="assets/BASEMENT%20FLOOR%20PLAN.pdf" target="_blank" rel="noopener noreferrer" class="fp-pdf-card">
+              <div class="fp-pdf-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </div>
+              <div class="fp-pdf-details">
+                <strong>Basement Floor Plan</strong>
+                <span>View basement parking layout</span>
+              </div>
+              <div class="fp-pdf-arrow" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+              </div>
+            </a>
+
+            <a href="assets/GROUND%20FLOOR%20PLAN.pdf" target="_blank" rel="noopener noreferrer" class="fp-pdf-card">
+              <div class="fp-pdf-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </div>
+              <div class="fp-pdf-details">
+                <strong>Ground Floor Plan</strong>
+                <span>View amenities &amp; gardens layout</span>
+              </div>
+              <div class="fp-pdf-arrow" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+              </div>
+            </a>
+
+            <a href="assets/STILT%20FLOOR%20PLAN.pdf" target="_blank" rel="noopener noreferrer" class="fp-pdf-card">
+              <div class="fp-pdf-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </div>
+              <div class="fp-pdf-details">
+                <strong>Stilt Floor Plan</strong>
+                <span>View stilt level &amp; entryways</span>
+              </div>
+              <div class="fp-pdf-arrow" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+              </div>
+            </a>
+
+            <a href="assets/TYPICAL%20FLOOR%20PLAN%20(1).pdf" target="_blank" rel="noopener noreferrer" class="fp-pdf-card">
+              <div class="fp-pdf-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </div>
+              <div class="fp-pdf-details">
+                <strong>Typical Floor Plan</strong>
+                <span>View flat sizes &amp; block divisions</span>
+              </div>
+              <div class="fp-pdf-arrow" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ CTA / CONTACT -->
+    <section class="cta-section" id="visit">
+      <div class="section-inner cta-inner">
+
+        <p class="overline reveal-up" style="--delay:0s">Thoughtfully Planned · Perfectly Yours</p>
+        <h2 class="cta-title reveal-up" style="--delay:.08s">
+          Your next home awaits<br/><em>in Ananth Nagar.</em>
+        </h2>
+        <p class="cta-body reveal-up" style="--delay:.16s">
+          Experience comfortable living with 20+ lifestyle amenities and a community designed for the way you actually live. Book a site visit today.
+        </p>
+
+        <!-- End Enquiry Form -->
+        <form class="enquiry-form end-enquiry enquiry-form-submit reveal-up" style="--delay:.2s" action="#" method="POST">
+          <input type="hidden" name="source" value="Footer Section Enquiry" />
+          <div class="form-group">
+            <label for="endName">Name</label>
+            <input type="text" id="endName" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="endPhone">Phone Number</label>
+            <input type="tel" id="endPhone" name="phone" placeholder="Enter Phone Number" required />
+          </div>
+          <button type="submit" class="btn btn-gold btn-submit">
+            Enquire Now
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+
+        <div class="cta-actions reveal-up" style="--delay:.28s">
+          <a href="tel:+919187455926" class="btn btn-primary btn-lg" id="ctaCall1">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.7 2.8a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c1 .3 1.9.5 2.8.7A2 2 0 0 1 22 16.9z"/></svg>
+            +91 91874 55926
+          </a>
+          <a href="tel:+919606999727" class="btn btn-outline-navy btn-lg" id="ctaCall2">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.7 2.8a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c1 .3 1.9.5 2.8.7A2 2 0 0 1 22 16.9z"/></svg>
+            +91 96069 99727
+          </a>
+          <a href="https://www.spacez.in" target="_blank" rel="noreferrer" class="btn btn-outline-navy btn-lg" id="ctaWebsite">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            www.spacez.in
+          </a>
+        </div>
+
+        <div class="price-note reveal-up" style="--delay:.32s">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+          Starting guide price ₹7,000/sq.ft + Deposit + GST. Subject to change. Please confirm at time of booking.
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════ FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="logo" href="#top" aria-label="Sri Nandana home">
+          <img src="assets/sri nandana logo.png" alt="Sri Nandana Infra" class="logo-img logo-img--sm" />
+        </a>
+        <p>Ananth Nagar, Electronic City, Bangalore.</p>
+      </div>
+      <div class="footer-right">
+        <p class="footer-disclaimer">*Price details are based on the supplied brochure and may change. Please confirm during booking.</p>
+        <p class="footer-copy">© 2025 Sri Nandana Infra. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
