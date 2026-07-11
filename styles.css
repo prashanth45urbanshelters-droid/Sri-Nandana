@@ -88,8 +88,7 @@ button {
 ══════════════════════════════════════════ */
 .header {
   position: sticky;
-  /* Forced Static */
-  top: 0px;
+  top: 0;
   background: var(--white);
   border-bottom: 1px solid var(--border);
   padding: 1.1rem var(--page-pad);
