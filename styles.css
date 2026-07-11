@@ -9,43 +9,45 @@
 /* ── Design Tokens ── */
 :root {
   /* Brand Colors from Logo */
-  --primary-navy:  #1a3270;
+  --primary-navy: #1a3270;
   --accent-orange: #f47920;
   --accent-orange-dim: rgba(244, 121, 32, 0.1);
-  --navy-dim:      rgba(26, 50, 112, 0.06);
-  --navy-light:    rgba(26, 50, 112, 0.12);
+  --navy-dim: rgba(26, 50, 112, 0.06);
+  --navy-light: rgba(26, 50, 112, 0.12);
 
   /* Light Neutrals */
-  --white:         #ffffff;
-  --bg-page:       #fcfbfa;
-  --bg-card:       #ffffff;
-  --bg-alternate:  #f5f6f9;
-  
+  --white: #ffffff;
+  --bg-page: #fcfbfa;
+  --bg-card: #ffffff;
+  --bg-alternate: #f5f6f9;
+
   /* Text */
-  --text-dark:     #121b2d;
-  --text-muted:    #5c687e;
-  --text-light:    #ffffff;
-  
+  --text-dark: #121b2d;
+  --text-muted: #5c687e;
+  --text-light: #ffffff;
+
   /* Borders & Highlights */
-  --border:        rgba(26, 50, 112, 0.1);
-  --border-light:  rgba(26, 50, 112, 0.05);
+  --border: rgba(26, 50, 112, 0.1);
+  --border-light: rgba(26, 50, 112, 0.05);
 
   /* Typography */
-  --font-display:  'Cormorant Garamond', Georgia, serif;
-  --font-body:     'DM Sans', system-ui, sans-serif;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
 
   /* Spacing */
-  --section-pad:   clamp(4.5rem, 8vw, 7.5rem);
-  --page-pad:      clamp(1.25rem, 5vw, 5rem);
+  --section-pad: clamp(4.5rem, 8vw, 7.5rem);
+  --page-pad: clamp(1.25rem, 5vw, 5rem);
 
   /* Shadows */
-  --shadow-sm:     0 4px 20px rgba(26, 50, 112, 0.04);
-  --shadow-md:     0 12px 40px rgba(26, 50, 112, 0.07);
-  --shadow-lg:     0 24px 60px rgba(26, 50, 112, 0.12);
+  --shadow-sm: 0 4px 20px rgba(26, 50, 112, 0.04);
+  --shadow-md: 0 12px 40px rgba(26, 50, 112, 0.07);
+  --shadow-lg: 0 24px 60px rgba(26, 50, 112, 0.12);
 }
 
 /* ── Reset ── */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -64,15 +66,30 @@ body {
   line-height: 1.6;
 }
 
-img { max-width: 100%; display: block; }
-a   { text-decoration: none; color: inherit; }
-button { cursor: pointer; border: none; background: none; font-family: inherit; }
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
 
 /* ══════════════════════════════════════════
    HEADER (STATIC)
 ══════════════════════════════════════════ */
 .header {
-  position: static; /* Forced Static */
+  position: sticky;
+  /* Forced Static */
+  top: 0px;
   background: var(--white);
   border-bottom: 1px solid var(--border);
   padding: 1.1rem var(--page-pad);
@@ -167,8 +184,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 /* Mobile nav */
 .mobile-nav {
-  position: absolute;
-  top: 5.7rem; left: 0; right: 0;
+  position: fixed;
+  top: 5.7rem;
+  left: 0;
+  right: 0;
   z-index: 90;
   padding: 1.5rem;
   background: var(--white);
@@ -196,7 +215,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transition: color .2s;
 }
 
-.mobile-nav-link:hover { color: var(--primary-navy); }
+.mobile-nav-link:hover {
+  color: var(--primary-navy);
+}
 
 .mobile-nav-cta {
   display: inline-flex;
@@ -225,7 +246,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transition: transform .2s ease, box-shadow .2s ease, background .2s ease, color .2s ease, border-color .2s ease;
 }
 
-.btn:hover { transform: translateY(-2px); }
+.btn:hover {
+  transform: translateY(-2px);
+}
 
 .btn-primary {
   background: var(--primary-navy);
@@ -316,7 +339,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .reveal-up {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity .8s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1);
+  transition: opacity .8s cubic-bezier(.16, 1, .3, 1), transform .8s cubic-bezier(.16, 1, .3, 1);
   transition-delay: var(--delay, 0s);
 }
 
@@ -746,8 +769,15 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 @keyframes pinBounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-3px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-3px);
+  }
 }
 
 /* ══════════════════════════════════════════
@@ -834,9 +864,17 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   border-color: var(--primary-navy);
 }
 
-.ac-navy   { background: var(--bg-page); }
-.ac-orange { background: #fdfaf7; }
-.ac-light  { background: #fafbfc; }
+.ac-navy {
+  background: var(--bg-page);
+}
+
+.ac-orange {
+  background: #fdfaf7;
+}
+
+.ac-light {
+  background: #fafbfc;
+}
 
 .ac-icon-wrap {
   display: inline-flex;
@@ -920,15 +958,27 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .fp-dot {
-  width: 8px; height: 8px;
+  width: 8px;
+  height: 8px;
   border-radius: 2px;
   flex-shrink: 0;
 }
 
-.fp-b { background: #3c7da9; }
-.fp-g { background: var(--accent-orange); }
-.fp-s { background: #5c9577; }
-.fp-t { background: var(--primary-navy); }
+.fp-b {
+  background: #3c7da9;
+}
+
+.fp-g {
+  background: var(--accent-orange);
+}
+
+.fp-s {
+  background: #5c9577;
+}
+
+.fp-t {
+  background: var(--primary-navy);
+}
 
 /* PDF Floor Plan Cards */
 .fp-visual {
@@ -1155,9 +1205,17 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 @media (max-width: 768px) {
-  .nav { display: none; }
-  .header-cta { display: none; }
-  .menu-toggle { display: flex; }
+  .nav {
+    display: none;
+  }
+
+  .header-cta {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
 
   .hero-content {
     padding-bottom: 10rem;
@@ -1170,7 +1228,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     padding: 1.25rem 1rem;
   }
 
-  .stat-divider { display: none; }
+  .stat-divider {
+    display: none;
+  }
 
   .stat-item {
     flex: 1 0 42%;
@@ -1185,8 +1245,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     padding: 1.5rem;
   }
 
-  .footer-inner { flex-direction: column; align-items: flex-start; }
-  .footer-right { text-align: left; }
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-right {
+    text-align: left;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1212,10 +1278,23 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 @media (max-width: 480px) {
-  .hero-actions { flex-direction: column; }
-  .hero-actions .btn { width: 100%; justify-content: center; }
-  .cta-actions { flex-direction: column; }
-  .cta-actions .btn { width: 100%; justify-content: center; }
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cta-actions {
+    flex-direction: column;
+  }
+
+  .cta-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 /* ── Enquiry Form Styles ── */
@@ -1278,7 +1357,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .enquiry-form .btn-submit {
   flex-shrink: 0;
-  margin-left: auto; /* Push button to right corner */
+  margin-left: auto;
+  /* Push button to right corner */
 }
 
 @media (max-width: 768px) {
@@ -1288,7 +1368,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     gap: 1.1rem;
     padding: 1.25rem;
   }
-  
+
   .enquiry-form .btn-submit {
     width: 100%;
     justify-content: center;
@@ -1333,11 +1413,16 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
+
 .spinner {
   margin-left: 8px;
   vertical-align: middle;
 }
-
